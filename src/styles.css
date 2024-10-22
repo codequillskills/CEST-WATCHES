@@ -1,0 +1,51 @@
+html,
+body {
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: Arial Black, sans-serif;
+  text-align: center;
+  background: #000;
+  height: 200vh;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh; /* Fix window height */
+ /* Hide the native scrollbar */
+}
+
+.scrollable-content {
+  height: 100%; /* Ensure it matches the viewport height */
+  overflow-y: scroll; /* Enable vertical scrolling within this container */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollable-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c6a982;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c6a982;
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c6a982;
+}
+
+* {
+  scrollbar-width:none;
+  
+}
