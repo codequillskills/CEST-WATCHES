@@ -3,6 +3,9 @@ import "./index.css";
 import Plx from "react-plx";
 
 export default function App() {
+  const handleClick = () => {
+    location.href = "https://cest-watches.com"; // Opens in a same tab
+  };
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -111,7 +114,7 @@ export default function App() {
         }}
       >
        
-<button className="cursor-pointer relative px-20 py-3 border border-white rounded-md bg-transparent hover:bg-white/10 transition-colors duration-300">
+<button className="cursor-pointer relative px-20 py-3 border border-white rounded-md bg-transparent hover:bg-white/10 transition-colors duration-300" onClick={handleClick}>
   <span className="font-light text-white text-xl tracking-[0.2em]">ENTER</span>
 </button>
         {/* <img
